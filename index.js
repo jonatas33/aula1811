@@ -2,8 +2,10 @@
 var express = require("express");
 var serv = express();
 
+//Rota
+
 serv.get("/sobre", function(req, res){
-    res.send("Aqui Voce encontra informa;'ao sobre o serv")
+    res.sendFile(__dirname + "/dom.html");
 });
 
 serv.get("/blog", function(req, res){
